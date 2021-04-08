@@ -24,5 +24,4 @@ export interface DataTableProps extends React.HTMLAttributes<HTMLElement> {
     totalRecordsTemplate: string;
 }
 
-declare const DataTable: React.FC<DataTableProps>;
-export default DataTable;
+export const DataTable: React.FC<DataTableProps>;

@@ -3,5 +3,6 @@
 // Definitions by: Kadin Van Valin <https://github.com/Kadinvanvalin>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-export { default as DataTable } from "./components/Table/DataTable";
-export * from "./components/Table";
+export * from "./lib/components/Table/DataTable";
+export * from "./lib/components/Table";
+export * from "./lib/components/Pagination";
