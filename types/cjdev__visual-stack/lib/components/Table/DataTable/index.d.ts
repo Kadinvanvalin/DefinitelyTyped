@@ -1,6 +1,7 @@
 import * as React from "react";
+import { PaginationOnChange } from "@cjdev/visual-stack";
 
-export interface DataTableProps extends React.HTMLAttributes<HTMLElement> {
+export interface DataTableProps {
     caption?: string;
     description?: string;
     columns?: any[];
@@ -9,7 +10,7 @@ export interface DataTableProps extends React.HTMLAttributes<HTMLElement> {
     loadingMessage?: string;
     rowsPerPage?: number;
     page?: number;
-    onPageChange: () => void;
+    onPageChange: PaginationOnChange;
     pagination?: boolean;
     sortingOption?: {
         label: string;

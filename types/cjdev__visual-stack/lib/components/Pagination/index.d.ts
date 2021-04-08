@@ -1,10 +1,12 @@
 import * as React from "react";
+type PageChange = { page: number; rowsPerPage: number };
+export type PaginationOnChange = (pageChange: PageChange) => void;
 
-export interface PaginationProps extends React.HTMLAttributes<HTMLElement> {
+export interface PaginationProps {
     page?: number;
     rowsPerPage?: number;
     numberOfRows: number;
-    onChange: () => void;
+    onChange: PaginationOnChange;
 }
 
 export const Pagination: React.FC<PaginationProps>;
