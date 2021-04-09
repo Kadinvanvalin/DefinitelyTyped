@@ -1,5 +1,5 @@
 import * as React from "react";
-type PageChange = { page: number; rowsPerPage: number };
+export interface PageChange { page: number; rowsPerPage: number; }
 export type PaginationOnChange = (pageChange: PageChange) => void;
 
 export interface PaginationProps {
