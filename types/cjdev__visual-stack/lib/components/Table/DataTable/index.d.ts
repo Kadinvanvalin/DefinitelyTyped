@@ -1,6 +1,11 @@
 import * as React from "react";
 import { PaginationOnChange } from "@cjdev/visual-stack";
 
+export interface DataTableSortingOption {
+    label?: string;
+    order?: string;
+}
+
 export interface DataTableProps {
     caption?: string;
     description?: string;
@@ -12,10 +17,7 @@ export interface DataTableProps {
     page?: number;
     onPageChange: PaginationOnChange;
     pagination?: boolean;
-    sortingOption?: {
-        label: string;
-        order: string;
-    };
+    sortingOption?: DataTableSortingOption;
     sortable?: boolean;
     onSort: () => void;
     selectable?: boolean;
